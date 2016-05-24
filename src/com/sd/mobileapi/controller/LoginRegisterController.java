@@ -102,6 +102,7 @@ public class LoginRegisterController {
 			responseErrorData("json串错误", resp);
 			return;
 		}
+		System.out.println("testgithub");
 		JSONObject json = new JSONObject(post);
 		// 手机号
 		String mobile = json.getString("mobile");

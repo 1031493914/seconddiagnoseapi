@@ -52,6 +52,7 @@ public class LoginRegisterController {
 			responseErrorData("JSON串为空", resp);
 			return;
 		}
+		system.out.println("testgithub");
 		JSONObject json = new JSONObject(str);
 		String loginname = json.optString("username");
 		String loginpwd = json.optString("userpwd");
